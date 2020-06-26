@@ -1,0 +1,97 @@
+body{
+    background-color: #fffafa;
+}
+
+#som{
+    display: none;
+}
+.container{
+    text-align: center;
+}
+.set_timer{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background-color: #ff9d5c;
+    color: white;
+    font-size: 18px;
+    padding: 8px 20px;
+    border: 0;
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#stop{
+    background-color: red;
+    display: none;
+}
+#timer{
+    font-family: ds-digital;
+    font-size: 120px;
+}
+#display{
+    text-align: center;
+}
+select{
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*pop-up*/
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    background: white;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border-radius: 12px;
+    border-top: 20px solid rgb(255, 115, 0);
+    position: relative;
+}
+@keyframes modal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal{
+    animation: modal .3s;
+}
+.close-pop{
+    position: absolute;
+    font-size: 1.2em;
+    top: -35px;
+    right: -14px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: gray;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+}
+.modal-container.mostrar{
+    display: flex;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="som" src="SFX.mp3"></audio>
+
+    <div id="display">
+        <h1 id="timer">00:00:00</h1>
+    </div>
+
+    <div class="container">
+        <br>
+        <br>
+        <button id="edit">Edit</button>
+        <button id="reset">Reset</button>
+        <button id="comecar">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+
+    <div id="modal-config" class="modal-container">
+        <div class="modal">
+            <button class="close-pop">X</button>
+            <div class="set_timer">
+                <h2>Hours</h2>
+                <select name="horas" id="horas"></select>
+    
+                <h2>Minutes</h2>
+                <select name="minutos" id="minutos"></select>
+    
+                <h2>Seconds</h2>
+                <select name="segundos" id="segundos"></select>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
